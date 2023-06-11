@@ -32,7 +32,7 @@
 .task-actions {
   position: absolute;
   top: 50%;
-  right: 130px;
+  right: 15px;
   transform: translateY(-50%);
   visibility: hidden;
   opacity: 0;
