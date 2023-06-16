@@ -26,7 +26,7 @@
       <!-- <div class="task-date">24 Feb 12:00</div> -->
     </div>
     <TaskActions @edit="isEdit = true" 
-                 @delete="removeTask" 
+                 @remove="removeTask" 
                  v-show="!isEdit"/>
   </li>
 </template>
@@ -42,7 +42,7 @@ const props = defineProps({
   }
 })
 
-const emit = defineEmits(['updated', 'completed', 'deleted'])
+const emit = defineEmits(['updated', 'completed', 'removed'])
 
 const isEdit = ref(false)
 const editingTask = ref(props.task.name)
@@ -76,7 +76,7 @@ const markTaskAsCompleted = event => {
 
 const removeTask = () => {
   if (confirm('Are you sure you want to delete this task?')) {
-    emit('deleted', props.task)
+    emit('removed', props.task)
   }
 }
 </script>
