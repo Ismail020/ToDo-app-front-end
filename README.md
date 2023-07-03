@@ -6,7 +6,7 @@
 
 Clone the repository to your device and cd into it
 ``` bash 
-git clone https://github.com/Ismail020/ToDo-app-back-end.git && cd "$(basename "$_" .git)"
+git clone https://github.com/Ismail020/ToDo-app-front-end.git && cd "$(basename "$_" .git)"
 ```
 
 Download packages and dependencies
