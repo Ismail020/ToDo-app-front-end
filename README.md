@@ -4,6 +4,9 @@
 
 ### First time setup
 
+❗️ Make sure to have the [back-end](https://github.com/Ismail020/ToDo-app-front-end) up and running before running the front-end ❗️
+
+
 Clone the repository to your device and cd into it
 ``` bash 
 git clone https://github.com/Ismail020/ToDo-app-front-end.git && cd "$(basename "$_" .git)"
